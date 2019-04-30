@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form {
+    padding: 50px;
+}
+
+h1 {
+    color: #224dae;
+}
+
+input[type="file"] {
+    display: flex;
+    padding: 20px 0;
+    margin: auto;
+}
+
+input[type="submit"] {
+    padding: 12px 18px;
+    border-radius: 11px;
+    font-size: 16px;
+    border: 2px solid #224dae;
+    background-color: #d6e6f5;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #43ab43;
+    background-color: #cef9cd;
+}
+
+</style>    
+</head>
+
+<body>
+
+<form action="fileUploader.php" method="post" enctype="multipart/form-data">
+    <h1>CHOOSE AN IMAGE TO UPLOAD:</h1>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>
